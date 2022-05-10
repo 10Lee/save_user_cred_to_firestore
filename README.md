@@ -1,17 +1,13 @@
 # save_user_cred_to_firestore
 
-A new Flutter project.
+Dependencies : 
+- Getx
+- Firebase auth, firebase storage, firebase firestore
+- Image Picker
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# save_user_cred_to_firestore
+## What this does?
+- When user sign in using email and password, his data such username, photo, bio and UID directly saved to firestore and the photo to firebase storage
+- after sign in, the codes will automaticaly create 'users' collection if there is no any 'users' collection before, and add a document in it with UID get gets from firebase auth
+- When user get authenticated either through sign up or login, we then bring to the home screen that show the username or email of that authenticated user use from sign in
+- This simple authentication app run as Responsive for the web, so we have web view also besides mobile
